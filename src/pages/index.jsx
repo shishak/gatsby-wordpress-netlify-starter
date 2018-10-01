@@ -78,7 +78,7 @@ const MainContentContainer = styled.main`
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query IndexQuery {
-    allWordpressPost(filter: {fields: {deploy: {eq: true}}}) {
+    allWordpressPost(filter: {fields: {deploy: {eq: false}}}) {
       edges {
         node {
           date
