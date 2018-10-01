@@ -108,7 +108,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           // The Post ID is prefixed with 'POST_'
 
           _.each(result.data.allWordpressPost.edges, edge => {
-
             if (edge.node.fields.deploy) {
               // grab all the tags and categories for later use
               edge.node.categories.forEach(category => {

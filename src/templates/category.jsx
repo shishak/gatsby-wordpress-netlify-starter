@@ -56,14 +56,6 @@ query category($id: String) {
   ) {
     edges {
       node {
-        author {
-          name
-          avatar_urls {
-            wordpress_24
-            wordpress_48
-            wordpress_96
-          }
-        }
         date
         slug
         title

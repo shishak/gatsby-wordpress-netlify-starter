@@ -8,7 +8,13 @@ import TopNavigation from '../components/Layout/Navigation/Navigation'
 
 class Index extends React.Component {
   render() {
-    const postEdges = this.props.data.allWordpressPost.edges
+    let postEdges = []
+
+    if (this.props.data.allWordpressPost && this.props.data.allWordpressPost.edges) {
+      postEdges = this.props.data.allWordpressPost.edges
+    }
+    
+    
     return (
       <HomeContainer>
         <Helmet title={config.siteTitle} />
@@ -81,12 +87,7 @@ export const pageQuery = graphql`
           modified
           excerpt
           id
-          featured_media {
-            source_url
-          }
-          author {
-            name
-          }
+          author
           categories {
             name
           }
