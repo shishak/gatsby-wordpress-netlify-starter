@@ -23,7 +23,7 @@ module.exports = {
       resolve: 'gatsby-source-wordpress',
       options: {
         // The base url to your WP site.
-        baseUrl: 'frohub.justabel.com',
+        baseUrl: '35.188.17.153',
         // baseUrl: 'wpgatsby.wtf',
         // WP.com sites set to true, WP.org set to false
         hostingWPCOM: false,
