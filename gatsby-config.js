@@ -23,7 +23,7 @@ module.exports = {
       resolve: 'gatsby-source-wordpress',
       options: {
         // The base url to your WP site.
-        baseUrl: 'http://35.188.114.84/',
+        baseUrl: '35.188.114.84',
         // baseUrl: 'wpgatsby.wtf',
         // WP.com sites set to true, WP.org set to false
         hostingWPCOM: false,
